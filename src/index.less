@@ -1,0 +1,217 @@
+html,
+body,
+:global(#root) {
+  height: 100%;
+  overflow: -moz-hidden-unscrollable;
+}
+
+:global(.ant-layout) {
+  min-height: 100%;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// temp fix for https://github.com/ant-design/ant-design/commit/a1fafb5b727b62cb0be29ce6e9eca8f579d4f8b7
+:global {
+  .display-flex {
+    display: flex;
+  }
+  .ant-table-scroll {
+    .ant-table-body {
+      overflow-x: auto !important;
+    }
+  }
+  .platformOrderTable {
+    table tr td,
+    table tr th {
+      padding: 10px;
+      text-align: center;
+      white-space: nowrap;
+      width: 150px;
+    }
+    .platformOrderTableRow {
+      white-space: nowrap;
+    }
+  }
+
+  .ant-spin-container {
+    overflow: visible !important;
+  }
+
+  .ant-tooltip-inner {
+    max-width: 500px !important;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: none;
+  }
+
+  .global-spin {
+    width: 100%;
+    margin: 40px 0 !important;
+  }
+
+  .indexPageCard .ant-card-head {
+    padding: 0;
+  }
+
+  .accountManageForm2 .ant-form-item-control-wrapper,
+  .accountManageForm .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+  .accountManageForm2 .ant-form-item-label,
+  .accountManageForm .ant-form-item-label {
+    max-width: 60px;
+  }
+
+  .accountManageForm .ant-form-item-children {
+    .formItemLeft {
+      width: 78%;
+      margin-right: 2%;
+    }
+    .formItemRight {
+      width: 20%;
+    }
+  }
+
+  .accountManageForm2 .ant-form-item-children {
+    .formItemLeft {
+      width: 62%;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .formItemAll {
+      width: 84%;
+      margin-right: 0;
+    }
+    .formItemRight {
+      width: 20%;
+    }
+    input {
+      width: 84%;
+      margin-left: 2%;
+    }
+    .ant-input-group-addon {
+      left: -59px;
+      z-index: 1000;
+    }
+  }
+
+  .checkAccountListCon .ant-list-item {
+    .ant-list-item-meta {
+      margin-bottom: 10px;
+    }
+    .ant-list-item-meta-title {
+      margin-bottom: 0;
+    }
+    .ant-list-item-extra {
+      margin: 0 10px 0 20px;
+    }
+    .ant-list-item-content {
+      margin-bottom: 10px;
+    }
+  }
+
+  .changePasswordCard {
+    .ant-form-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .batchTransferAccountModal,
+  .withdrawOrderModal {
+    .ant-select-selection__rendered {
+      line-height: 22px;
+    }
+    .ant-select-selection--single {
+      height: 22px;
+      width: 100%;
+    }
+  }
+
+  .parameterConfigCard {
+    margin-bottom: 32px !important;
+    .ant-card-head {
+      min-height: 0;
+      margin-bottom: 0;
+      padding: 0 12px;
+      background: #f7f9fa;
+      .ant-card-head-title {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+      }
+      .ant-card-extra {
+        padding: 11px 0;
+      }
+    }
+  }
+
+  .anotherCard {
+    margin-bottom: -2px !important;
+  }
+  .configModal .ant-form-item-children {
+    white-space: nowrap;
+    .formItemLeft {
+      width: 74%;
+      margin-right: 2%;
+    }
+    .proportionLeft {
+      width: 40.5%;
+      margin-right: 1%;
+    }
+    .proportionRight {
+      width: 40.5%;
+      margin-left: 1%;
+    }
+    .checkReg {
+      position: absolute;
+      top: -12px;
+      right: 27px;
+      color: #d97676;
+      font-size: 12px;
+    }
+  }
+
+  .importModalForm .ant-form-item {
+    margin-bottom: 5px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .checkAccountListCon .ant-list-item {
+      .ant-list-item-main {
+        max-width: 80%;
+      }
+      .ant-list-item-extra {
+        margin-left: 10px;
+        white-space: nowrap;
+        display: flex;
+      }
+    }
+  }
+  .space {
+    margin: 0;
+    span {
+      padding: 0 5px;
+      border-right: 1px solid #eee;
+    }
+    span:last-child {
+      border: none;
+    }
+  }
+  .text-center {
+    text-align: center;
+  }
+}
